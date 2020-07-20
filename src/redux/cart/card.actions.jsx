@@ -1,5 +1,12 @@
-import UserActionTypes from "./card.types";
+import CardActionTypes from "./card.types";
 
 export const toggleCardHidden = () => ({
-  type: UserActionTypes.TOGGLE_CARD_HIDDEN,
+  type: CardActionTypes.TOGGLE_CARD_HIDDEN,
 });
+
+export const addItem = (item) => ({
+  type: CardActionTypes.ADD_ITEM,
+  payload: item,
+}
+);
+ 
